@@ -6,6 +6,12 @@ namespace BoxApplication {
       private double breadth;  // Breadth of a box
       private double height;   // Height of a box
       
+      public Box(){
+         Console.WriteLine("Object is being created");
+      }
+      ~Box(){
+         Console.WriteLine("Object is being deleted");
+      }
       public void setLength( double len ) {
          length = len;
       }
